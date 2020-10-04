@@ -32,6 +32,14 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
     "react-axe": "^3.5.3",
     "react-hot-loader": "^4.13.0",
     "source-map-explorer": "^2.5.0"

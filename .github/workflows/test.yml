@@ -1,0 +1,47 @@
+name: Test
+on: [push]
+
+jobs:
+  unit-test:
+    name: Test
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Unit Tests
+        run: yarn test --watchAll=false
+      - name: E2E Tests
+        uses: cypress-io/github-action@v1
+        with:
+          start: yarn start
+          wait-on: 'http://localhost:3000'
+      - name: Build and Bundle Size Check
+        run: |
+          yarn build
+          yarn bundlesize
+
+      - uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+      - uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos

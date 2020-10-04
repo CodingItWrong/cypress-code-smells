@@ -7,7 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react-dom": "npm:@hot-loader/react-dom",
     "react-scripts": "3.4.3"
   },
   "scripts": {
@@ -30,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-hot-loader": "^4.13.0"
   }
 }

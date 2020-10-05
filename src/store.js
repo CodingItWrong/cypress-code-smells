@@ -3,10 +3,14 @@ import {devToolsEnhancer} from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import example3 from './unprepared/example3/store/reducer';
 import example4 from './unprepared/example4/store/reducer';
+import example7 from './flickering/example7/store/reducer';
+import example8 from './flickering/example8/store/reducer';
 
 const rootReducer = combineReducers({
   example3,
   example4,
+  example7,
+  example8,
 });
 
 const store = createStore(

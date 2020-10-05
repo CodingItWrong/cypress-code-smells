@@ -10,6 +10,8 @@ import Example3 from './unprepared/example3';
 import Example4 from './unprepared/example4';
 import Example5 from './flickering/example5';
 import Example6 from './flickering/example6';
+import Example7 from './flickering/example7';
+import Example8 from './flickering/example8';
 
 initializeAxe();
 
@@ -60,6 +62,16 @@ const App = () => {
                     Example 6
                   </Link>
                 </li>
+                <li>
+                  <Link to="/flickering/example7" data-cy="example7">
+                    Example 7
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/flickering/example8" data-cy="example8">
+                    Example 8
+                  </Link>
+                </li>
               </ul>
             </li>
           </ul>
@@ -81,6 +93,12 @@ const App = () => {
             </Route>
             <Route path="/flickering/example6">
               <Example6 />
+            </Route>
+            <Route path="/flickering/example7">
+              <Example7 />
+            </Route>
+            <Route path="/flickering/example8">
+              <Example8 />
             </Route>
           </Switch>
         </main>

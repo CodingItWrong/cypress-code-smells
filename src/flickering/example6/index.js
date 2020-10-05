@@ -22,7 +22,7 @@ export default function Example6() {
 
   return (
     <>
-      <h2>Example 2</h2>
+      <h2>Flickering Element &gt; Example 6</h2>
       <p>
         Count: <span data-cy="count">{count}</span>
       </p>

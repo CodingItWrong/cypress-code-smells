@@ -13,7 +13,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <header>
-          <h1>Cypress Flake Test</h1>
+          <h1>Cypress Code Smells</h1>
         </header>
         <main>
           <ul>

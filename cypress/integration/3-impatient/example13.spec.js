@@ -1,5 +1,5 @@
 describe('Example 13', () => {
-  it('fails', () => {
+  it('fails with Redux', () => {
     cy.visit('/impatient/example13');
 
     cy.get('[data-cy=sign-out]').click();

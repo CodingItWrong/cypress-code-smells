@@ -1,5 +1,5 @@
 describe('Example 12', () => {
-  it('succeeds checking for UI element', () => {
+  it('waits on UI element', () => {
     cy.visit('/impatient/example12');
 
     cy.get('[data-cy=sign-out]').click();
@@ -10,7 +10,7 @@ describe('Example 12', () => {
     cy.get('[data-cy=member-count]').contains(42);
   });
 
-  it('succeeds checking for network request', () => {
+  it('waits on network request', () => {
     cy.server();
 
     cy.route({

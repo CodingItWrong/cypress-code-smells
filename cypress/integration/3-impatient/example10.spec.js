@@ -1,5 +1,5 @@
 describe('Example 10', () => {
-  it('succeeds', () => {
+  it('succeeds due to instant state update', () => {
     cy.visit('/impatient/example10');
 
     cy.get('[data-cy=sign-out]').click();

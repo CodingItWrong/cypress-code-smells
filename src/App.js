@@ -12,6 +12,10 @@ import Example5 from './flickering/example5';
 import Example6 from './flickering/example6';
 import Example7 from './flickering/example7';
 import Example8 from './flickering/example8';
+import Example9 from './impatient/example9';
+import Example10 from './impatient/example10';
+import Example11 from './impatient/example11';
+import Example12 from './impatient/example12';
 
 initializeAxe();
 
@@ -74,6 +78,31 @@ const App = () => {
                 </li>
               </ul>
             </li>
+            <li>
+              Impatient Test
+              <ul>
+                <li>
+                  <Link to="/flickering/example9" data-cy="example9">
+                    Example 9
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/flickering/example10" data-cy="example10">
+                    Example 10
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/flickering/example11" data-cy="example11">
+                    Example 11
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/flickering/example12" data-cy="example12">
+                    Example 12
+                  </Link>
+                </li>
+              </ul>
+            </li>
           </ul>
           <Switch>
             <Route path="/unprepared/example1">
@@ -99,6 +128,18 @@ const App = () => {
             </Route>
             <Route path="/flickering/example8">
               <Example8 />
+            </Route>
+            <Route path="/impatient/example9">
+              <Example9 />
+            </Route>
+            <Route path="/impatient/example10">
+              <Example10 />
+            </Route>
+            <Route path="/impatient/example11">
+              <Example11 />
+            </Route>
+            <Route path="/impatient/example12">
+              <Example12 />
             </Route>
           </Switch>
         </main>

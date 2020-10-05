@@ -1,6 +1,6 @@
-# My React App
+# Cypress Code Smells
 
-Describe your app here.
+This project demonstrates several "code smells" that can occur in projects tested with Cypress, and ways to fix them.
 
 ## Usage
 
@@ -16,30 +16,12 @@ $ yarn start
 
 ## Test
 
-### Unit Tests
-
-```
-$ yarn test
-```
-
-### E2E Tests
-
 Run the dev server in another terminal, then run:
 
 ```
 $ yarn cypress
 ```
 
-## Building
+## License
 
-```
-$ yarn build
-```
-
-## Bundle Analysis
-
-```
-$ yarn analyze
-```
-
-Builds the app and launches [`source-map-explorer`](https://github.com/danvk/source-map-explorer) to visualize how the app is split into bundles and what contributes to their size.
+MIT

@@ -3,8 +3,11 @@ import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store';
 import initializeAxe from './axe';
+
 import Example1 from './unprepared/example1';
 import Example2 from './unprepared/example2';
+import Example3 from './unprepared/example3';
+import Example4 from './unprepared/example4';
 
 initializeAxe();
 
@@ -26,8 +29,18 @@ const App = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/unprepared/example1" data-cy="example2">
+                  <Link to="/unprepared/example2" data-cy="example2">
                     Example 2
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/unprepared/example3" data-cy="example3">
+                    Example 3
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/unprepared/example4" data-cy="example4">
+                    Example 4
                   </Link>
                 </li>
               </ul>
@@ -39,6 +52,12 @@ const App = () => {
             </Route>
             <Route path="/unprepared/example2">
               <Example2 />
+            </Route>
+            <Route path="/unprepared/example3">
+              <Example3 />
+            </Route>
+            <Route path="/unprepared/example4">
+              <Example4 />
             </Route>
           </Switch>
         </main>

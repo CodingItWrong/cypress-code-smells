@@ -21,7 +21,7 @@ const App = () => {
         <main>
           <ul>
             <li>
-              Unprepared Test
+              Unprepared Element
               <ul>
                 <li>
                   <Link to="/unprepared/example1" data-cy="example1">

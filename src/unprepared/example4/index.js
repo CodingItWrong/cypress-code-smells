@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {loadCountFromServer, increment} from './store/actions';
 
-export default function Example1() {
+export default function Example4() {
   const dispatch = useDispatch();
   const count = useSelector(state => state.example4);
 

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-export default function Example1() {
+export default function Example2() {
   const [count, setCount] = useState(null);
 
   useEffect(() => {

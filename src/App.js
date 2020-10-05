@@ -16,6 +16,8 @@ import Example9 from './impatient/example9';
 import Example10 from './impatient/example10';
 import Example11 from './impatient/example11';
 import Example12 from './impatient/example12';
+import Example13 from './impatient/example13';
+import Example14 from './impatient/example14';
 
 initializeAxe();
 
@@ -82,23 +84,33 @@ const App = () => {
               Impatient Test
               <ul>
                 <li>
-                  <Link to="/flickering/example9" data-cy="example9">
+                  <Link to="/impatient/example9" data-cy="example9">
                     Example 9
                   </Link>
                 </li>
                 <li>
-                  <Link to="/flickering/example10" data-cy="example10">
+                  <Link to="/impatient/example10" data-cy="example10">
                     Example 10
                   </Link>
                 </li>
                 <li>
-                  <Link to="/flickering/example11" data-cy="example11">
+                  <Link to="/impatient/example11" data-cy="example11">
                     Example 11
                   </Link>
                 </li>
                 <li>
-                  <Link to="/flickering/example12" data-cy="example12">
+                  <Link to="/impatient/example12" data-cy="example12">
                     Example 12
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/impatient/example13" data-cy="example13">
+                    Example 13
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/impatient/example14" data-cy="example14">
+                    Example 14
                   </Link>
                 </li>
               </ul>
@@ -140,6 +152,12 @@ const App = () => {
             </Route>
             <Route path="/impatient/example12">
               <Example12 />
+            </Route>
+            <Route path="/impatient/example13">
+              <Example13 />
+            </Route>
+            <Route path="/impatient/example14">
+              <Example14 />
             </Route>
           </Switch>
         </main>

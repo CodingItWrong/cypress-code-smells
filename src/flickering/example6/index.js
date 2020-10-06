@@ -5,7 +5,6 @@ export default function Example6() {
   const [count, setCount] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
       setCount(27);

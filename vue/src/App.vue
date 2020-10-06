@@ -20,6 +20,18 @@
               </router-link>
               - Trivial Solution
             </li>
+            <li>
+              <router-link to="/unprepared/example3">
+                Example 3
+              </router-link>
+              - Vuex Failure
+            </li>
+            <li>
+              <router-link to="/unprepared/example4">
+                Example 4
+              </router-link>
+              - Vuex Solution
+            </li>
           </ul>
         </li>
       </ul>

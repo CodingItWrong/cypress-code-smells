@@ -3,6 +3,8 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Example1 from '../views/Example1.vue';
 import Example2 from '../views/Example2.vue';
+import Example3 from '../views/Example3.vue';
+import Example4 from '../views/Example4.vue';
 
 Vue.use(VueRouter);
 
@@ -21,6 +23,16 @@ const routes = [
     path: '/unprepared/example2',
     name: 'Example2',
     component: Example2,
+  },
+  {
+    path: '/unprepared/example3',
+    name: 'Example3',
+    component: Example3,
+  },
+  {
+    path: '/unprepared/example4',
+    name: 'Example4',
+    component: Example4,
   },
 ];
 

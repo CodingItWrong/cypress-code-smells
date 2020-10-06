@@ -6,11 +6,9 @@ export const EXAMPLE14_INCREMENT = 'EXAMPLE14_INCREMENT';
 
 export const signOut = dispatch => {
   dispatch(signOutRequest());
-  setTimeout(() => {
-    axios.delete('http://localhost:3001/sessions/1').then(() => {
-      dispatch(signOutSuccess());
-    });
-  }, 1000);
+  axios.delete('http://localhost:3001/sessions/1').then(() => {
+    dispatch(signOutSuccess());
+  });
 };
 
 const signOutRequest = () => ({

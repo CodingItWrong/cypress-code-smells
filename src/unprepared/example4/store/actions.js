@@ -4,11 +4,9 @@ export const EXAMPLE4_SET_COUNT = 'EXAMPLE4_SET_COUNT';
 export const EXAMPLE4_INCREMENT = 'EXAMPLE4_INCREMENT';
 
 export const loadCountFromServer = dispatch => {
-  setTimeout(() => {
-    axios.get('/api/count.json').then(({data}) => {
-      dispatch(setCount(data.count));
-    });
-  }, 1000); // simulate delay
+  axios.get('/api/count.json').then(({data}) => {
+    dispatch(setCount(data.count));
+  });
 };
 
 const setCount = count => ({

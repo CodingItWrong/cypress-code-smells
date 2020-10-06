@@ -6,11 +6,9 @@ export const EXAMPLE7_INCREMENT = 'EXAMPLE7_INCREMENT';
 
 export const loadCountFromServer = dispatch => {
   dispatch(request());
-  setTimeout(() => {
-    axios.get('/api/count.json').then(({data}) => {
-      dispatch(setCount(data.count));
-    });
-  }, 1000); // simulate delay
+  axios.get('/api/count.json').then(({data}) => {
+    dispatch(setCount(data.count));
+  });
 };
 
 const request = () => ({

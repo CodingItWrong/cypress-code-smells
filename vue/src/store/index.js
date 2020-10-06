@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import example3 from './example3';
-import example4 from './example4';
+import example3 from './unprepared/example3';
+import example4 from './unprepared/example4';
 
 Vue.use(Vuex);
 

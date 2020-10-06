@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Example1 from '../views/Example1.vue';
-import Example2 from '../views/Example2.vue';
-import Example3 from '../views/Example3.vue';
-import Example4 from '../views/Example4.vue';
+import Example1 from '../views/unprepared/Example1.vue';
+import Example2 from '../views/unprepared/Example2.vue';
+import Example3 from '../views/unprepared/Example3.vue';
+import Example4 from '../views/unprepared/Example4.vue';
 
 Vue.use(VueRouter);
 

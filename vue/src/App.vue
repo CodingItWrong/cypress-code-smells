@@ -14,6 +14,12 @@
               </router-link>
               - Trivial Failure
             </li>
+            <li>
+              <router-link to="/unprepared/example2">
+                Example 2
+              </router-link>
+              - Trivial Solution
+            </li>
           </ul>
         </li>
       </ul>

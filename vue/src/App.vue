@@ -34,6 +34,23 @@
             </li>
           </ul>
         </li>
+        <li>
+          Flickering Element
+          <ul>
+            <li>
+              <router-link to="/flickering/example5">
+                Example 5
+              </router-link>
+              - Trivial Failure
+            </li>
+            <li>
+              <router-link to="/flickering/example6">
+                Example 6
+              </router-link>
+              - Trivial Solution
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <main>

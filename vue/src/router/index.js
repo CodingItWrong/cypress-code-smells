@@ -9,6 +9,10 @@ import Example5 from '../views/flickering/Example5.vue';
 import Example6 from '../views/flickering/Example6.vue';
 import Example7 from '../views/flickering/Example7.vue';
 import Example8 from '../views/flickering/Example8.vue';
+import Example9 from '../views/impatient/Example9.vue';
+import Example10 from '../views/impatient/Example10.vue';
+import Example11 from '../views/impatient/Example11.vue';
+import Example12 from '../views/impatient/Example12.vue';
 
 Vue.use(VueRouter);
 
@@ -57,6 +61,26 @@ const routes = [
     path: '/flickering/example8',
     name: 'Example8',
     component: Example8,
+  },
+  {
+    path: '/impatient/example9',
+    name: 'Example9',
+    component: Example9,
+  },
+  {
+    path: '/impatient/example10',
+    name: 'Example10',
+    component: Example10,
+  },
+  {
+    path: '/impatient/example11',
+    name: 'Example11',
+    component: Example11,
+  },
+  {
+    path: '/impatient/example12',
+    name: 'Example12',
+    component: Example12,
   },
 ];
 

@@ -63,6 +63,35 @@
             </li>
           </ul>
         </li>
+        <li>
+          Impatient Test
+          <ul>
+            <li>
+              <router-link to="/impatient/example9">
+                Example 9
+              </router-link>
+              - Trivial Failure
+            </li>
+            <li>
+              <router-link to="/impatient/example10">
+                Example 10
+              </router-link>
+              - Trivial Solution
+            </li>
+            <li>
+              <router-link to="/impatient/example11">
+                Example 11
+              </router-link>
+              - Loading-State Solution
+            </li>
+            <li>
+              <router-link to="/impatient/example12">
+                Example 12
+              </router-link>
+              - Green-Light Solution
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <main>

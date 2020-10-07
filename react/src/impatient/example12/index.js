@@ -22,6 +22,7 @@ export default function Example12() {
 
   return (
     <>
+      <h2>Impatient Element &gt; Example 12</h2>
       <p>
         {isSignedIn ? (
           <>

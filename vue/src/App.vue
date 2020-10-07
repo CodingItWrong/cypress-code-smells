@@ -90,6 +90,18 @@
               </router-link>
               - Green-Light Solution
             </li>
+            <li>
+              <router-link to="/impatient/example13">
+                Example 13
+              </router-link>
+              - Vuex Failure
+            </li>
+            <li>
+              <router-link to="/impatient/example14">
+                Example 14
+              </router-link>
+              - Loading-State Solution
+            </li>
           </ul>
         </li>
       </ul>

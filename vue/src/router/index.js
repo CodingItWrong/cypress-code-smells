@@ -13,6 +13,8 @@ import Example9 from '../views/impatient/Example9.vue';
 import Example10 from '../views/impatient/Example10.vue';
 import Example11 from '../views/impatient/Example11.vue';
 import Example12 from '../views/impatient/Example12.vue';
+import Example13 from '../views/impatient/Example13.vue';
+import Example14 from '../views/impatient/Example14.vue';
 
 Vue.use(VueRouter);
 
@@ -81,6 +83,16 @@ const routes = [
     path: '/impatient/example12',
     name: 'Example12',
     component: Example12,
+  },
+  {
+    path: '/impatient/example13',
+    name: 'Example13',
+    component: Example13,
+  },
+  {
+    path: '/impatient/example14',
+    name: 'Example14',
+    component: Example14,
   },
 ];
 

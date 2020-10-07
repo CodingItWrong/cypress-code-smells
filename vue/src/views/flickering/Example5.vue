@@ -29,6 +29,7 @@ export default {
         this.count = 27;
       }, 1000);
     }, 0); // Vue seems to require this to get it to break
+    // not even this.$nextTick breaks it
   },
   methods: {
     increment() {

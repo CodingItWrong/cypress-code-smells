@@ -10,7 +10,11 @@
       Count:
       <span data-cy="count">{{ count }}</span>
     </p>
-    <button @click="increment" :disabled="count === null" data-cy="increment">
+    <button
+      @click="handleIncrement"
+      :disabled="count === null"
+      data-cy="increment"
+    >
       Increment
     </button>
   </div>

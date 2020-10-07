@@ -10,7 +10,7 @@
       Count:
       <span data-cy="count">{{ count }}</span>
     </p>
-    <button @click="increment" data-cy="increment">
+    <button @click="handleIncrement" data-cy="increment">
       Increment
     </button>
   </div>

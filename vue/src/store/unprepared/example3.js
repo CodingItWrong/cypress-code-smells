@@ -7,12 +7,9 @@ const example3 = {
   },
   actions: {
     loadCountFromServer({commit}) {
-      // setTimeout seems to be necessary in Vue to get it to fail
-      setTimeout(() => {
-        axios.get('/api/count.json').then(({data}) => {
-          commit('setCount', data.count);
-        });
-      }, 1000);
+      axios.get('/api/count.json').then(({data}) => {
+        commit('setCount', data.count);
+      });
     },
   },
   mutations: {

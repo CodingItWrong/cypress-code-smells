@@ -49,6 +49,18 @@
               </router-link>
               - Trivial Solution
             </li>
+            <li>
+              <router-link to="/flickering/example7">
+                Example 7
+              </router-link>
+              - Vuex Failure
+            </li>
+            <li>
+              <router-link to="/flickering/example8">
+                Example 8
+              </router-link>
+              - Vuex Solution
+            </li>
           </ul>
         </li>
       </ul>

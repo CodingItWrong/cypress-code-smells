@@ -7,6 +7,7 @@ export default function Example7() {
   const count = useSelector(state => state.example7.count);
   const loading = useSelector(state => state.example7.loading);
 
+  // NOTE: useLayoutEffect fixes it
   useEffect(() => {
     dispatch(loadCountFromServer);
   }, [dispatch]);

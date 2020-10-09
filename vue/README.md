@@ -6,6 +6,12 @@ This project demonstrates several "code smells" that can occur in projects teste
 
 This project was bootstrapped with [Vue CLI](https://cli.vuejs.org/).
 
+## Installation
+
+```bash
+$ yarn install
+```
+
 ## Run
 
 ```bash

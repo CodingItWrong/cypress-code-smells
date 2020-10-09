@@ -6,6 +6,12 @@ This project demonstrates several "code smells" that can occur in projects teste
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+```bash
+$ yarn install
+```
+
 ## Run
 
 ```bash

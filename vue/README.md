@@ -1,29 +1,32 @@
-# cypress-code-smells
+# Cypress Code Smells
 
-## Project setup
-```
-yarn install
-```
+This project demonstrates several "code smells" that can occur in projects tested with Cypress, and ways to fix them.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Usage
 
-### Compiles and minifies for production
-```
-yarn build
+This project was bootstrapped with [Vue CLI](https://cli.vuejs.org/).
+
+## Run
+
+```bash
+$ yarn serve
 ```
 
-### Run your end-to-end tests
-```
-yarn test:e2e
+For the tests in the "impatient" folder, in another terminal you will need to run the Express server in the `/api/` folder parallel to this `/react/` folder:
+
+```bash
+$ cd ../api
+$ yarn start
 ```
 
-### Lints and fixes files
-```
-yarn lint
+## Test
+
+Run the dev server in another terminal, then run:
+
+```bash
+$ yarn test:e2e
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+MIT

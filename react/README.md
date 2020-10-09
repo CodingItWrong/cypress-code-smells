@@ -6,11 +6,16 @@ This project demonstrates several "code smells" that can occur in projects teste
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Dependencies are locked with `yarn.lock`; please use `yarn` rather than `npm` for installing.
-
 ## Run
 
+```bash
+$ yarn start
 ```
+
+For the tests in the "impatient" folder, in another terminal you will need to run the Express server in the `/api/` folder parallel to this `/react/` folder:
+
+```bash
+$ cd ../api
 $ yarn start
 ```
 
@@ -18,7 +23,7 @@ $ yarn start
 
 Run the dev server in another terminal, then run:
 
-```
+```bash
 $ yarn cypress
 ```
 

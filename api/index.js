@@ -1,14 +1,21 @@
 const express = require('express');
 const http = require('http');
 const cors = require('cors');
-const todoRouter = require('./routes/todos');
-const sessionRouter = require('./routes/sessions');
 
 const app = express();
 app.use(cors());
 
-app.use('/todos', todoRouter);
-app.use('/sessions', sessionRouter);
+const router = express.Router();
+router
+  .route('/sessions/:id')
+  .delete((req, res) => {
+    setTimeout(() => {
+      res.status(204);
+      res.send();
+    }, 1000);
+  });
+
+app.use(router);
 
 const port = process.env.PORT || 3001;
 const httpServer = http.createServer(app);

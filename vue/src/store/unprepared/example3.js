@@ -7,9 +7,11 @@ const example3 = {
   },
   actions: {
     loadCountFromServer({commit}) {
-      axios.get('/api/count.json').then(({data}) => {
-        commit('setCount', data.count);
-      });
+      setTimeout(() => {
+        axios.get('/api/count.json').then(({data}) => {
+          commit('setCount', data.count);
+        });
+      }, 1000);
     },
   },
   mutations: {

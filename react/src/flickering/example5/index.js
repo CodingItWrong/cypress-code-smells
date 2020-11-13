@@ -4,7 +4,6 @@ export default function Example5() {
   const [loading, setLoading] = useState(false);
   const [count, setCount] = useState(null);
 
-  // NOTE: useLayoutEffect fixes it
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

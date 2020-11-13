@@ -6,8 +6,8 @@ describe('Example 12', () => {
     cy.get('[data-cy=signed-out]');
 
     cy.get('[data-cy=increment]').click();
-    cy.get('[data-cy=guest-count]').contains(28);
-    cy.get('[data-cy=member-count]').contains(42);
+    cy.get('[data-cy=guest-count]').contains(1);
+    cy.get('[data-cy=member-count]').contains(0);
   });
 
   it('waits on network request', () => {
@@ -24,7 +24,7 @@ describe('Example 12', () => {
     cy.wait('@signOut');
 
     cy.get('[data-cy=increment]').click();
-    cy.get('[data-cy=guest-count]').contains(28);
-    cy.get('[data-cy=member-count]').contains(42);
+    cy.get('[data-cy=guest-count]').contains(1);
+    cy.get('[data-cy=member-count]').contains(0);
   });
 });

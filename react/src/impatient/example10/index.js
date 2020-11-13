@@ -3,8 +3,8 @@ import axios from 'axios';
 
 export default function Example10() {
   const [isSignedIn, setIsSignedIn] = useState(true);
-  const [guestCount, setGuestCount] = useState(27);
-  const [memberCount, setMemberCount] = useState(42);
+  const [guestCount, setGuestCount] = useState(0);
+  const [memberCount, setMemberCount] = useState(0);
 
   const signOut = () => {
     setIsSignedIn(false);

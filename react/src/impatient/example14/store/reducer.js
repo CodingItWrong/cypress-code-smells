@@ -7,8 +7,8 @@ import {
 const initialState = {
   isSignedIn: true,
   isSigningOut: false,
-  guestCount: 27,
-  memberCount: 42,
+  guestCount: 0,
+  memberCount: 0,
 };
 
 export default function example1(state = initialState, action) {

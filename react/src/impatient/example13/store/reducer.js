@@ -2,8 +2,8 @@ import {EXAMPLE13_SIGN_OUT, EXAMPLE13_INCREMENT} from './actions';
 
 const initialState = {
   isSignedIn: true,
-  guestCount: 27,
-  memberCount: 42,
+  guestCount: 0,
+  memberCount: 0,
 };
 
 export default function example1(state = initialState, action) {

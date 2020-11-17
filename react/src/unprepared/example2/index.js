@@ -6,7 +6,7 @@ export default function Example2() {
   useEffect(() => {
     setTimeout(() => {
       setCount(10);
-    }, 1000);
+    }, 100);
   }, []);
 
   const increment = () => {

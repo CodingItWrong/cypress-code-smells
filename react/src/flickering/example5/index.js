@@ -8,7 +8,7 @@ export default function Example5() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setCount(27);
+      setCount(10);
     }, 1000);
   }, []);
 

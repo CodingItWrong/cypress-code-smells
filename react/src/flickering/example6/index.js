@@ -7,7 +7,7 @@ export default function Example6() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      setCount(27);
+      setCount(10);
     }, 1000);
   }, []);
 

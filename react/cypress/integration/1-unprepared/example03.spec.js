@@ -4,11 +4,11 @@ describe('Example 3', () => {
     cy.route({
       method: 'GET',
       url: '/api/count.json',
-      response: {count: 27},
+      response: {count: 10},
     });
 
     cy.visit('/unprepared/example3');
     cy.get('[data-cy=increment]').click();
-    cy.get('[data-cy=count]').contains(28);
+    cy.get('[data-cy=count]').contains(11);
   });
 });

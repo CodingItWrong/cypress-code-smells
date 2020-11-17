@@ -4,7 +4,7 @@ export const EXAMPLE4_SET_COUNT = 'EXAMPLE4_SET_COUNT';
 export const EXAMPLE4_INCREMENT = 'EXAMPLE4_INCREMENT';
 
 export const loadCountFromServer = dispatch => {
-  axios.get('/api/count.json').then(({data}) => {
+  axios.get('http://localhost:3001/count').then(({data}) => {
     dispatch(setCount(data.count));
   });
 };

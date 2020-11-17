@@ -1,9 +1,9 @@
 describe('Example 3', () => {
-  it('fails with Redux', () => {
+  it('fails randomly with Redux', () => {
     cy.server();
     cy.route({
       method: 'GET',
-      url: '/api/count.json',
+      url: 'http://localhost:3001/count',
       response: {count: 10},
     });
 

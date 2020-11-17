@@ -1,6 +1,6 @@
 describe('Example 14', () => {
-  it('fails with Redux', () => {
-    cy.visit('/impatient/example14');
+  it('waits on Redux loading state', () => {
+    cy.visit('/impatient/example15');
 
     cy.get('[data-cy=sign-out]').click();
 

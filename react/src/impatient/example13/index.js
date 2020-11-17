@@ -1,19 +1,23 @@
-import React from 'react';
-import {useSelector, useDispatch} from 'react-redux';
-import {signOut, increment} from './store/actions';
+import React, {useState} from 'react';
+import axios from 'axios';
 
 export default function Example13() {
-  const dispatch = useDispatch();
-  const isSignedIn = useSelector(state => state.example13.isSignedIn);
-  const guestCount = useSelector(state => state.example13.guestCount);
-  const memberCount = useSelector(state => state.example13.memberCount);
+  const [isSignedIn, setIsSignedIn] = useState(true);
+  const [guestCount, setGuestCount] = useState(0);
+  const [memberCount, setMemberCount] = useState(0);
 
-  const handleSignOut = () => {
-    dispatch(signOut);
+  const signOut = () => {
+    axios.delete('http://localhost:3001/sessions/1').then(() => {
+      setIsSignedIn(false);
+    });
   };
 
-  const handleIncrement = () => {
-    dispatch(increment());
+  const increment = () => {
+    if (isSignedIn) {
+      setMemberCount(memberCount + 1);
+    } else {
+      setGuestCount(guestCount + 1);
+    }
   };
 
   return (
@@ -23,7 +27,7 @@ export default function Example13() {
         {isSignedIn ? (
           <>
             Signed In
-            <button onClick={handleSignOut} data-cy="sign-out">
+            <button onClick={signOut} data-cy="sign-out">
               Sign Out
             </button>
           </>
@@ -31,7 +35,7 @@ export default function Example13() {
           <span data-cy="signed-out">Signed Out</span>
         )}
       </p>
-      <button onClick={handleIncrement} data-cy="increment">
+      <button onClick={increment} data-cy="increment">
         Increment
       </button>
       <p>

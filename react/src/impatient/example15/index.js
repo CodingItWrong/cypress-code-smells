@@ -2,11 +2,12 @@ import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {signOut, increment} from './store/actions';
 
-export default function Example14() {
+export default function Example15() {
   const dispatch = useDispatch();
-  const isSignedIn = useSelector(state => state.example14.isSignedIn);
-  const guestCount = useSelector(state => state.example14.guestCount);
-  const memberCount = useSelector(state => state.example14.memberCount);
+  const isSignedIn = useSelector(state => state.example15.isSignedIn);
+  const isSigningOut = useSelector(state => state.example15.isSigningOut);
+  const guestCount = useSelector(state => state.example15.guestCount);
+  const memberCount = useSelector(state => state.example15.memberCount);
 
   const handleSignOut = () => {
     dispatch(signOut);
@@ -18,7 +19,7 @@ export default function Example14() {
 
   return (
     <>
-      <h2>Impatient Element &gt; Example 14</h2>
+      <h2>Impatient Element &gt; Example 15</h2>
       <p>
         {isSignedIn ? (
           <>
@@ -31,7 +32,11 @@ export default function Example14() {
           <span data-cy="signed-out">Signed Out</span>
         )}
       </p>
-      <button onClick={handleIncrement} data-cy="increment">
+      <button
+        onClick={handleIncrement}
+        disabled={isSigningOut}
+        data-cy="increment"
+      >
         Increment
       </button>
       <p>

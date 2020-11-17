@@ -18,6 +18,7 @@ import Example11 from './impatient/example11';
 import Example12 from './impatient/example12';
 import Example13 from './impatient/example13';
 import Example14 from './impatient/example14';
+import Example15 from './impatient/example15';
 
 initializeAxe();
 
@@ -113,17 +114,23 @@ const App = () => {
                   <Link to="/impatient/example12" data-cy="example12">
                     Example 12
                   </Link>
-                  - Green-Light Solution
+                  - Green-Light Element Solution
                 </li>
                 <li>
                   <Link to="/impatient/example13" data-cy="example13">
                     Example 13
                   </Link>
-                  - Redux Failure
+                  - Green-Light Request Solution
                 </li>
                 <li>
                   <Link to="/impatient/example14" data-cy="example14">
                     Example 14
+                  </Link>
+                  - Redux Failure
+                </li>
+                <li>
+                  <Link to="/impatient/example15" data-cy="example15">
+                    Example 15
                   </Link>
                   - Redux Loading-State Solution
                 </li>
@@ -172,6 +179,9 @@ const App = () => {
             </Route>
             <Route path="/impatient/example14">
               <Example14 />
+            </Route>
+            <Route path="/impatient/example15">
+              <Example15 />
             </Route>
           </Switch>
         </main>

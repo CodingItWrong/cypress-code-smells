@@ -7,6 +7,13 @@ app.use(cors());
 
 const router = express.Router();
 router
+  .route('/count')
+  .get((req, res) => {
+    setTimeout(() => {
+      res.send({ count: 10 });
+    }, 1000);
+  });
+router
   .route('/sessions/:id')
   .delete((req, res) => {
     setTimeout(() => {
